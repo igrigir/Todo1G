@@ -1,0 +1,60 @@
+/* cijela stranica tamna, bez bijele pozadine */
+body {
+    background-color: #0f172a; /* ista kao prije */
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+/* kartica ostaje malo svjetlija da se ističe */
+.card {
+    background-color: #111827;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    
+}
+
+/* header kartice */
+.card-header {
+    background-color: #1e293b !important; /* plavo-siva */
+    color: #f1f5f9 !important;
+}
+
+/* form kontrola da izgledaju kao header */
+.form-control, .form-select {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: #f1f5f9;
+}
+
+.form-control::placeholder {
+    color: #94a3b8; /* svijetlo siva placeholder */
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #1e293b;
+    border-color: #3b82f6;
+    box-shadow: none;
+    color: #f8fafc;
+}
+
+/* filter dugme */
+.btn-outline-light {
+    border-color: #334155;
+    color: #f1f5f9;
+    background-color: #1e293b;
+}
+
+.btn-outline-light:hover {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Završeni task - zelena pozadina */
+.task-done {
+    background-color: rgba(16, 205, 129, 0.15); /* blaga zelena */
+}
+
+.task-done td {
+    color: #d1fae5; /* svijetlo zelena nijansa za tekst */
+}

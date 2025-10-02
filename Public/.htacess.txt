@@ -1,0 +1,8 @@
+# public/.htaccess
+Options -Indexes
+RewriteEngine On
+
+# Ako želiš da / ide u index.php bez query stringova
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
